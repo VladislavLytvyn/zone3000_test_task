@@ -102,4 +102,3 @@ class UrlDetailView(BaseView):
             return JsonResponse({"error": "RedirectRule not found"}, status=404)
         redirect_rule.delete()
         return JsonResponse({}, status=204)
-
